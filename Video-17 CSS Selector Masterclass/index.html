@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors</title>
+    <style>
+        div{
+            color: bisque;
+        }
+        .red{
+            color: brown;
+        }
+        #green{
+            color: green;
+        }
+        div > p {
+            color: violet;
+        }
+        div p{
+            color: blue;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            background-color: blanchedalmond;
+        }
+        div:first-child{
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
-    
+    <div>Hello I am Div for element Selectors</div>
+    <div class="red">Hello I am Div for class Selectors</div>
+    <div id="green">Hello I am Div for ID Selectors</div>
+    <div><p>Hello I am Div for child Selectors</p></div>
+    <div><span><p>Hello I am Div for Selectors</p></span></div>
+    <a href="https://www.google.com/">Go To google</a>
+    <a href="https://www.facebook.com/">Go to facebook</a>
 </body>
 </html>
