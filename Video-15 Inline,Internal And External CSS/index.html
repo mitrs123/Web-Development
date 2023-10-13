@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal And External CSS</title>
+    <style>
+        header{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .IC{
+            color: aqua;
+            background-color: blueviolet;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Inline, Internal And External CSS
+    </header>
+    <main>
+        <ol>
+            <li style=" color: red ; background-color: aqua;">
+                Inline CSS
+            </li>
+            <li class="IC">
+                Internal CSS
+            </li>
+            <li class="EC">
+                External CSS
+            </li>
+        </ol>
+    </main>
+</body>
+</html>
